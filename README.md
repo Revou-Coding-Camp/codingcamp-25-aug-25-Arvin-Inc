@@ -57,16 +57,6 @@
 </tr>
 </table>
 
-## 🎨 Preview Website
-
-<div align="center">
-
-| Desktop View | Mobile View |
-|:------------:|:-----------:|
-| ![Desktop](https://via.placeholder.com/400x250/007bff/white?text=Desktop+View) | ![Mobile](https://via.placeholder.com/200x350/28a745/white?text=Mobile+View) |
-
-</div>
-
 ## 🚀 Fitur Utama
 
 ### 🎯 Interaktivitas Canggih
