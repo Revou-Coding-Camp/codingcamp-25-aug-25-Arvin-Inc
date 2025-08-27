@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+  <title>My Website</title>
+</head>
+<body>
+  <!-- Name Input Popup -->
+  <div class="modal-overlay hidden" id="name-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3>Masukkan Nama Anda</h3>
+        <button class="modal-close" onclick="closeNameModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit="handleNameSubmit(event)">
+          <div class="form-row">
+            <label for="popup-nama">Nama:</label>
+            <input type="text" id="popup-nama" name="popup-nama" placeholder="Ketik nama Anda di sini" required />
+          </div>
+          <button type="submit" class="modal-submit">Simpan</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <header>
+      <div class="logo" aria-label="Logo with letters R e V O stacked vertically">
+        ARV
+      </div>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#Home">Home</a>
+        <a href="#about">About</a>
+        <a href="#headquarter">Our Profile</a>
+        <a href="#contact">Message Us</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        &#9776;
+      </button>
+    </header>
+    <nav class="mobile-nav hidden" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#Home">Home</a>
+        <a href="#about">About</a>
+        <a href="#headquarter">Our Profile</a>
+        <a href="#contact">Message Us</a>
+    </nav>
+    <main id="Home">
+      <h1 id="welcome-message">Hi, Welcome To Website</h1>
+      <p>Welcome to the travel website, which will take you around the world.</p>
+      <img class="rounded" src="image/neom-STV2s3FYw7Y-unsplash.jpg" alt="Placeholder image 1366 by 578 pixels" width="1366" height="578" />
+    </main>
+
+    <section class="about" aria-label="About Us" id="about">
+      <h2>About Us</h2>
+      <p>We are a professional travel company dedicated to creating unforgettable travel experiences. With a strong commitment to comfort, safety, and customer satisfaction, we provide a wide range of travel services—from tour packages and business trips to customized journeys tailored to your needs. Supported by trusted partners in transportation, accommodation, and destinations, we ensure every journey is seamless and memorable. By embracing digital solutions, we make planning and booking easier, faster, and more reliable for our customers. Our mission is simple: to turn your travel dreams into reality.</p>
+      <h2>Vission</h2>
+      <p>To become a trusted travel company that delivers safe, comfortable, and memorable journeys, and to be the top choice for people in fulfilling their travel dreams, whether for leisure or business.</p>
+      <h2>Mission</h2>
+      <ul>
+        <li>Provide high-quality travel services at competitive prices.</li>
+        <li>Offer diverse and innovative travel packages tailored to customer needs.</li>
+        <li>Prioritize comfort, safety, and customer satisfaction in every service.</li>
+        <li>Build strong partnerships with transportation, accommodation, and tourism providers.</li>
+        <li>Promote both local and international tourism with professional and reliable service.</li>
+        <li>Leverage digital technology to make travel planning and booking easier for customers.</li>
+      </ul>
+    </section>
+
+    <section class="headquarter antique-bg" aria-label="Our Headquarter" id="headquarter">
+      <h2>Our Headquarter</h2>
+      <div class="hq-list">
+        <div class="hq-item">
+          <img src="image/Kota-Jakarta.jpg" alt="Circle placeholder image 70 by 70 pixels representing Jakarta" width="70" height="70" />
+          <span>Jakarta</span>
+        </div>
+        <div class="hq-item">
+          <img src="image/Kota-Bandung.jpg" alt="Circle placeholder image 70 by 70 pixels representing Bandung" width="70" height="70" />
+          <span>Bandung</span>
+        </div>
+        <div class="hq-item">
+          <img src="image/Kota-Surabaya.jpg" alt="Circle placeholder image 70 by 70 pixels representing Surabaya" width="70" height="70" />
+          <span>Surabaya</span>
+        </div>
+        <div class="hq-item">
+          <img src="image/Kota-Cirebon.jpg" alt="Circle placeholder image 70 by 70 pixels representing Surabaya" width="70" height="70" />
+          <span>Cirebon</span>
+        </div>
+        <div class="hq-item">
+          <img src="image/Kota-Malang.jpg" alt="Circle placeholder image 70 by 70 pixels representing Surabaya" width="70" height="70" />
+          <span>Malang</span>
+        </div>
+      </div>
+    </section>
+    <section class="message-us" aria-label="Message Us" id="contact">
+      <div>
+        <h3>Message Us</h3>
+        <form onsubmit="updateWelcomeMessage(event)">
+          <div class="form-row">
+            <label for="nama">Name</label>
+            <input class="rounded-sm" type="text" id="nama" name="nama" placeholder="Nama" />
+          </div>
+          <div class="form-row">
+            <label for="tanggal">Date of birth :</label>
+            <input class="rounded-sm" type="date" id="tanggal" name="tanggal" value="2023-04-02" />
+          </div>
+          <div class="form-row" style="gap:4px;">
+            <span>Gender :</span>
+            <label><input type="radio" name="gender" value="Laki-Laki" checked /> Man</label>
+            <label><input type="radio" name="gender" value="Perempuan" /> Woman</label>
+          </div>
+          <div class="form-row" style="align-items:flex-start;">
+            <label for="message" style="padding-top:4px;">Message</label>
+            <textarea class="rounded-sm" id="message" name="message" placeholder="Message" rows="4"></textarea>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="message-info rounded-sm" aria-live="polite">
+        <p><strong>Current time</strong>: </p>
+        <p>
+          <strong>Name</strong>: <br/>
+          <strong>Date of birth</strong>: <br/>
+          <strong>Gender</strong>: <br/>
+          <strong>Message</strong>:
+        </p>
+      </div>
+    </section>
+    <footer style="font-size:8px; text-align:right; padding:8px; border-top:1px solid #9ca3af;" class="antique-bg">
+        &copy; 2025 Arfienade Aycia Munawar
+    </footer>
+  </div>
+</body>
+</html>
