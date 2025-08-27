@@ -1,8 +1,6 @@
-# 🌟 Travel Website - MiniProject
-
 <div align="center">
 
-![Travel Website](image/neom-STV2s3FYw7Y-unsplash.jpg)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,5,4&height=200&section=header&text=Arfienade%20Aycia%20Munawar&fontSize=50&fontColor=fff&fontAlignY=35&desc=Travel%20Website%20Mini%20Project&descAlignY=55&descAlign=62" alt="Header Banner"/>
 
 ✨ **Website Travel Company yang Responsif dan Interaktif** ✨  
 
@@ -233,41 +231,7 @@ const processForm = () => {
 
 </div>
 
-<style>
-/* Modern styling for the README */
-.readme-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin: 30px 0;
-}
-
-.feature-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 20px;
-  border-radius: 15px;
-  color: white;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Animation for elements */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-.floating {
-  animation: float 3s ease-in-out infinite;
-}
-</style>
+<!-- Footer Banner -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,5,4&height=100&section=footer&text=Thank%20You&fontSize=30&fontColor=fff&fontAlignY=35" alt="Footer Banner"/>
+</div>
